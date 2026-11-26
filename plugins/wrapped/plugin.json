@@ -1,11 +1,21 @@
 {
   "id": "wrapped",
   "name": "Wrapped",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "api": 1,
-  "description": "Dein Hörjahr als Geschichte: Top-Titel, Künstler, Hörzeit, Tageszeit, Lieblingstag. Bildschirmfüllend, aus deinem eigenen Verlauf.",
+  "description": "Dein Hörjahr als Geschichte: bildschirmfüllende Folien mit Covern, Bewegung und Musik aus deiner Bibliothek. Top-Titel, Künstler, Hörzeit, Tageszeit, Lieblingstag.",
   "author": "Tonwerk",
   "license": "MIT",
-  "pages": [{ "id": "wrapped", "title": "Wrapped", "file": "wrapped.html" }],
-  "permissions": ["library", "history"]
+  "pages": [
+    {
+      "id": "wrapped",
+      "title": "Wrapped",
+      "file": "wrapped.html"
+    }
+  ],
+  "permissions": [
+    "library",
+    "history",
+    "audio"
+  ]
 }

@@ -6,7 +6,7 @@ const net = require('net')
 const API = 1
 const ID_RE = /^[a-z0-9][a-z0-9-]{1,38}[a-z0-9]$/
 const HOST_RE = /^(?=.{4,253}$)([a-z0-9-]+\.)+[a-z]{2,}$/
-const SIMPLE_PERMS = new Set(['events', 'lyrics', 'source', 'library', 'history', 'player', 'control'])
+const SIMPLE_PERMS = new Set(['events', 'lyrics', 'source', 'library', 'history', 'player', 'control', 'audio'])
 const ALLOWED_EXT = new Set(['.js', '.css', '.json', '.md', '.txt', '.svg', '.html'])
 const MAX_FILE = 1024 * 1024, MAX_TOTAL = 3 * 1024 * 1024
 

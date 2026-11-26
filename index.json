@@ -11,7 +11,7 @@
         "library"
       ],
       "download": "dist/duplicate-finder-1.0.0.twplugin",
-      "sha256": "9401f3d4c31980f461c09e544692f862f0a7ceb76785d576c85a8b9e25dbfa5b"
+      "sha256": "63d02b2baf5f9f7ee102bfbc3eea7c93b7fd37c35d307176249871f989a59027"
     },
     {
       "id": "flat-contrast",
@@ -33,7 +33,7 @@
         "library"
       ],
       "download": "dist/library-check-1.0.0.twplugin",
-      "sha256": "30702beafd8613a6d3885c7272d1689ab095da2464979159b9a71a65f68c62ac"
+      "sha256": "37ff1c8b8e82833fc0a2ca5a8aae72286d7a368d0707bfea70dd8b1584ed2cad"
     },
     {
       "id": "listenbrainz-scrobbler",
@@ -72,7 +72,7 @@
         "network:musicbrainz.org"
       ],
       "download": "dist/new-releases-1.0.0.twplugin",
-      "sha256": "b42a9ad94f19884e7b01eb10092753e229f7ac4700e2bd4eea6ded7df90214b9"
+      "sha256": "f03d7966b8ca4c9bea917df0dd582618ecc0bad1791e3510f24d5516aaedc586"
     },
     {
       "id": "now-playing-log",
@@ -89,15 +89,16 @@
     {
       "id": "wrapped",
       "name": "Wrapped",
-      "version": "1.0.0",
-      "description": "Dein Hörjahr als Geschichte: Top-Titel, Künstler, Hörzeit, Tageszeit, Lieblingstag. Bildschirmfüllend, aus deinem eigenen Verlauf.",
+      "version": "1.1.0",
+      "description": "Dein Hörjahr als Geschichte: bildschirmfüllende Folien mit Covern, Bewegung und Musik aus deiner Bibliothek. Top-Titel, Künstler, Hörzeit, Tageszeit, Lieblingstag.",
       "author": "Tonwerk",
       "permissions": [
         "library",
-        "history"
+        "history",
+        "audio"
       ],
-      "download": "dist/wrapped-1.0.0.twplugin",
-      "sha256": "c6cfd8706c318e08057a25fbb2535e72111f0a9cd0f72c924071a33450cc80cb"
+      "download": "dist/wrapped-1.1.0.twplugin",
+      "sha256": "b63d63973e701daefe4bcb147e009387c934cb7ceba3a865913b582b187fbad4"
     }
   ]
 }
