@@ -1,0 +1,11 @@
+{
+  "id": "flat-contrast",
+  "name": "Hoher Kontrast",
+  "version": "1.0.0",
+  "api": 1,
+  "description": "Theme-Plugin: nur CSS, keine Berechtigungen, kein Skript.",
+  "author": "Tonwerk",
+  "license": "MIT",
+  "theme": "theme.css",
+  "permissions": []
+}

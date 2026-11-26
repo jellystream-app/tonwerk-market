@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "plugins": [
+    {
+      "id": "flat-contrast",
+      "name": "Hoher Kontrast",
+      "version": "1.0.0",
+      "description": "Theme-Plugin: nur CSS, keine Berechtigungen, kein Skript.",
+      "author": "Tonwerk",
+      "permissions": [],
+      "download": "dist/flat-contrast-1.0.0.twplugin",
+      "sha256": "dd20f8cdf7f7d96c9ab336230f97aae26aa076d27761a1290a1b830e92a422db"
+    },
+    {
+      "id": "lrclib-lyrics",
+      "name": "LRCLIB Songtexte",
+      "version": "1.0.0",
+      "description": "Holt synchronisierte Songtexte von lrclib.net. Zeigt tw.fetch und tw.lyrics.",
+      "author": "Tonwerk",
+      "permissions": [
+        "lyrics",
+        "network:lrclib.net"
+      ],
+      "download": "dist/lrclib-lyrics-1.0.0.twplugin",
+      "sha256": "72ad6fc77acd580405472c537bfa96c26008cb197786e9534dc0a03fd2d9718b"
+    },
+    {
+      "id": "now-playing-log",
+      "name": "Hörprotokoll",
+      "version": "1.0.0",
+      "description": "Schreibt jeden gehörten Titel ins Plugin-Protokoll. Das kleinste sinnvolle Plugin.",
+      "author": "Tonwerk",
+      "permissions": [
+        "events"
+      ],
+      "download": "dist/now-playing-log-1.0.0.twplugin",
+      "sha256": "770077faa3dc133756ac4eb0db831ebb546e083d644ebdfc334b7e6fe1e4e620"
+    }
+  ]
+}

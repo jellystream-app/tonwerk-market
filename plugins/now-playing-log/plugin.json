@@ -1,0 +1,14 @@
+{
+  "id": "now-playing-log",
+  "name": "Hörprotokoll",
+  "version": "1.0.0",
+  "api": 1,
+  "description": "Schreibt jeden gehörten Titel ins Plugin-Protokoll. Das kleinste sinnvolle Plugin.",
+  "author": "Tonwerk",
+  "license": "MIT",
+  "main": "main.js",
+  "permissions": ["events"],
+  "settings": [
+    { "key": "minSeconds", "label": "Mindesthördauer in Sekunden", "type": "text", "default": "30" }
+  ]
+}

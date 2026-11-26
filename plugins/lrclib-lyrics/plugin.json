@@ -1,0 +1,11 @@
+{
+  "id": "lrclib-lyrics",
+  "name": "LRCLIB Songtexte",
+  "version": "1.0.0",
+  "api": 1,
+  "description": "Holt synchronisierte Songtexte von lrclib.net. Zeigt tw.fetch und tw.lyrics.",
+  "author": "Tonwerk",
+  "license": "MIT",
+  "main": "main.js",
+  "permissions": ["lyrics", "network:lrclib.net"]
+}

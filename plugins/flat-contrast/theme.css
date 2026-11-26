@@ -1,0 +1,12 @@
+/* Themes überschreiben nur die Variablen der App und dürfen keine fremden Inhalte nachladen. */
+:root {
+  --bg: #000000;
+  --panel: #0a0a0a;
+  --card: #121212;
+  --hover: #1c1c1c;
+  --active: #262626;
+  --line: #ffffff40;
+  --text: #ffffff;
+  --sub: #d0d0d0;
+  --dim: #a0a0a0;
+}
