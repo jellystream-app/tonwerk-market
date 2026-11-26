@@ -1,0 +1,11 @@
+{
+  "id": "duplicate-finder",
+  "name": "Dubletten-Finder",
+  "version": "1.0.0",
+  "api": 1,
+  "description": "Findet doppelte Titel in deiner Bibliothek, getrennt nach gleichem Album und verschiedenen Alben. Mit CSV-Export.",
+  "author": "Tonwerk",
+  "license": "MIT",
+  "pages": [{ "id": "dupes", "title": "Dubletten", "file": "dupes.html" }],
+  "permissions": ["library"]
+}

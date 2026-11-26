@@ -1,0 +1,11 @@
+{
+  "id": "wrapped",
+  "name": "Wrapped",
+  "version": "1.0.0",
+  "api": 1,
+  "description": "Dein Hörjahr als Geschichte: Top-Titel, Künstler, Hörzeit, Tageszeit, Lieblingstag. Bildschirmfüllend, aus deinem eigenen Verlauf.",
+  "author": "Tonwerk",
+  "license": "MIT",
+  "pages": [{ "id": "wrapped", "title": "Wrapped", "file": "wrapped.html" }],
+  "permissions": ["library", "history"]
+}

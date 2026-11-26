@@ -1,0 +1,11 @@
+{
+  "id": "library-check",
+  "name": "Bibliotheks-Check",
+  "version": "1.0.0",
+  "api": 1,
+  "description": "Zeigt, wo in deiner Bibliothek Angaben fehlen: Genre, Jahr, Album, Dauer, Titelnummer, Dateiendungen im Titel. Mit CSV-Export.",
+  "author": "Tonwerk",
+  "license": "MIT",
+  "pages": [{ "id": "check", "title": "Bibliotheks-Check", "file": "check.html" }],
+  "permissions": ["library"]
+}

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Bibliotheks-Check</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 24px 28px 48px; background: var(--panel, #111); color: var(--text, #fff); font-family: var(--font, system-ui, sans-serif); font-size: 14px; }
+  h1 { margin: 0 0 6px; font-size: 28px; letter-spacing: -.03em; } .total { color: var(--sub, #aaa); margin-bottom: 20px; }
+  .cats { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 10px; max-width: 920px; }
+  .cat { text-align: left; background: var(--card, #1d1d1d); border: 1px solid var(--line, #333); border-radius: 8px; padding: 14px 16px; cursor: pointer; font: inherit; color: inherit; }
+  .cat:hover, .cat[aria-pressed=true] { background: var(--hover, #262626); border-color: var(--accent, #3df5a7); }
+  .cat b { display: block; font-size: 30px; letter-spacing: -.03em; font-variant-numeric: tabular-nums; } .cat span { color: var(--sub, #aaa); } .cat i { display: block; height: 4px; margin-top: 10px; background: var(--line, #333); border-radius: 2px; overflow: hidden; } .cat i u { display: block; height: 100%; background: var(--accent, #3df5a7); }
+  .cat.ok b { color: var(--accent, #3df5a7); }
+  .bar { display: flex; gap: 10px; margin: 22px 0 12px; align-items: center; } button.s { font: inherit; color: inherit; background: var(--card, #1d1d1d); border: 1px solid var(--line, #333); border-radius: 6px; padding: 7px 11px; cursor: pointer; }
+  table { width: 100%; max-width: 920px; border-collapse: collapse; } td { padding: 6px 12px 6px 0; border-bottom: 1px solid var(--line, #333); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 340px; } td:nth-child(n+3) { color: var(--sub, #aaa); }
+  .more { color: var(--sub, #aaa); padding: 10px 0; }
+</style></head>
+<body>
+<h1>Bibliotheks-Check</h1>
+<div class="total" id="total"></div>
+<div class="cats" id="cats"></div>
+<div class="bar" id="bar" hidden><b id="catname"></b><button class="s" id="csv" type="button">Als CSV speichern</button></div>
+<table id="rows"></table><div class="more" id="more"></div>
+<script src="check.js"></script></body></html>

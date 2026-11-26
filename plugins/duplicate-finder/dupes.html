@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Dubletten</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 24px 28px 48px; background: var(--panel, #111); color: var(--text, #fff); font-family: var(--font, system-ui, sans-serif); font-size: 14px; }
+  h1 { margin: 0 0 14px; font-size: 28px; letter-spacing: -.03em; }
+  .sum { display: flex; gap: 32px; flex-wrap: wrap; margin: 4px 0 16px; } .sum b { display: block; font-size: 30px; letter-spacing: -.03em; font-variant-numeric: tabular-nums; } .sum span { color: var(--sub, #aaa); }
+  .bar { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 18px; }
+  select, button, input { font: inherit; color: inherit; background: var(--card, #1d1d1d); border: 1px solid var(--line, #333); border-radius: 6px; padding: 7px 11px; }
+  button { cursor: pointer; } button:hover { background: var(--hover, #262626); }
+  .g { border-top: 1px solid var(--line, #333); padding: 12px 0; max-width: 860px; }
+  .g h3 { margin: 0 0 6px; font-size: 16px; } .g h3 small { color: var(--sub, #aaa); font-weight: 400; font-size: 13px; margin-left: 6px; }
+  .r { display: grid; grid-template-columns: 1fr 70px 70px 40px; gap: 12px; padding: 3px 0; color: var(--sub, #aaa); font-variant-numeric: tabular-nums; } .r span:first-child { color: var(--text, #fff); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .empty { padding: 48px 0; color: var(--sub, #aaa); }
+</style></head>
+<body>
+<h1>Dubletten</h1>
+<div class="sum" id="sum"></div>
+<div class="bar"><select id="mode" aria-label="Art"><option value="all">Alle</option><option value="same">Gleiches Album</option><option value="diff">Verschiedene Alben</option></select><input id="q" type="search" placeholder="Filtern" aria-label="Filtern"><button id="csv" type="button">Als CSV speichern</button></div>
+<div id="list"></div>
+<script src="dupes.js"></script></body></html>

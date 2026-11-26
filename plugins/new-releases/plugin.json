@@ -1,0 +1,11 @@
+{
+  "id": "new-releases",
+  "name": "Neuerscheinungen",
+  "version": "1.0.0",
+  "api": 1,
+  "description": "Zeigt neue Alben, EPs und Singles deiner Künstler, die noch nicht in deiner Bibliothek sind. Daten von MusicBrainz.",
+  "author": "Tonwerk",
+  "license": "MIT",
+  "pages": [{ "id": "releases", "title": "Neuerscheinungen", "file": "releases.html" }],
+  "permissions": ["library", "network:musicbrainz.org"]
+}

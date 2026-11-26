@@ -2,6 +2,18 @@
   "version": 1,
   "plugins": [
     {
+      "id": "duplicate-finder",
+      "name": "Dubletten-Finder",
+      "version": "1.0.0",
+      "description": "Findet doppelte Titel in deiner Bibliothek, getrennt nach gleichem Album und verschiedenen Alben. Mit CSV-Export.",
+      "author": "Tonwerk",
+      "permissions": [
+        "library"
+      ],
+      "download": "dist/duplicate-finder-1.0.0.twplugin",
+      "sha256": "9401f3d4c31980f461c09e544692f862f0a7ceb76785d576c85a8b9e25dbfa5b"
+    },
+    {
       "id": "flat-contrast",
       "name": "Hoher Kontrast",
       "version": "1.0.0",
@@ -9,7 +21,32 @@
       "author": "Tonwerk",
       "permissions": [],
       "download": "dist/flat-contrast-1.0.0.twplugin",
-      "sha256": "dd20f8cdf7f7d96c9ab336230f97aae26aa076d27761a1290a1b830e92a422db"
+      "sha256": "cf8ca81c70754296e6426b79c28fa8d7189b086119686cf3806f2d6805125cd5"
+    },
+    {
+      "id": "library-check",
+      "name": "Bibliotheks-Check",
+      "version": "1.0.0",
+      "description": "Zeigt, wo in deiner Bibliothek Angaben fehlen: Genre, Jahr, Album, Dauer, Titelnummer, Dateiendungen im Titel. Mit CSV-Export.",
+      "author": "Tonwerk",
+      "permissions": [
+        "library"
+      ],
+      "download": "dist/library-check-1.0.0.twplugin",
+      "sha256": "30702beafd8613a6d3885c7272d1689ab095da2464979159b9a71a65f68c62ac"
+    },
+    {
+      "id": "listenbrainz-scrobbler",
+      "name": "ListenBrainz Scrobbler",
+      "version": "1.0.0",
+      "description": "Meldet gehörte Titel an ListenBrainz. Nicht gesendete Wiedergaben werden gespeichert und später nachgeholt.",
+      "author": "Tonwerk",
+      "permissions": [
+        "events",
+        "network:listenbrainz.org"
+      ],
+      "download": "dist/listenbrainz-scrobbler-1.0.0.twplugin",
+      "sha256": "db29f94ac95efb7a0622d2d6cb1cf6db9a8df298ac9966be896c9a915a85d607"
     },
     {
       "id": "lrclib-lyrics",
@@ -22,7 +59,20 @@
         "network:lrclib.net"
       ],
       "download": "dist/lrclib-lyrics-1.0.0.twplugin",
-      "sha256": "72ad6fc77acd580405472c537bfa96c26008cb197786e9534dc0a03fd2d9718b"
+      "sha256": "60538eb44bace5e93a3e26db0e842d3f61225bb456bdd9295928858647f08d8d"
+    },
+    {
+      "id": "new-releases",
+      "name": "Neuerscheinungen",
+      "version": "1.0.0",
+      "description": "Zeigt neue Alben, EPs und Singles deiner Künstler, die noch nicht in deiner Bibliothek sind. Daten von MusicBrainz.",
+      "author": "Tonwerk",
+      "permissions": [
+        "library",
+        "network:musicbrainz.org"
+      ],
+      "download": "dist/new-releases-1.0.0.twplugin",
+      "sha256": "b42a9ad94f19884e7b01eb10092753e229f7ac4700e2bd4eea6ded7df90214b9"
     },
     {
       "id": "now-playing-log",
@@ -34,7 +84,20 @@
         "events"
       ],
       "download": "dist/now-playing-log-1.0.0.twplugin",
-      "sha256": "770077faa3dc133756ac4eb0db831ebb546e083d644ebdfc334b7e6fe1e4e620"
+      "sha256": "d92b04148d16dde8f3b704a610f927657406d353592255046e8cccaec4fde3a1"
+    },
+    {
+      "id": "wrapped",
+      "name": "Wrapped",
+      "version": "1.0.0",
+      "description": "Dein Hörjahr als Geschichte: Top-Titel, Künstler, Hörzeit, Tageszeit, Lieblingstag. Bildschirmfüllend, aus deinem eigenen Verlauf.",
+      "author": "Tonwerk",
+      "permissions": [
+        "library",
+        "history"
+      ],
+      "download": "dist/wrapped-1.0.0.twplugin",
+      "sha256": "c6cfd8706c318e08057a25fbb2535e72111f0a9cd0f72c924071a33450cc80cb"
     }
   ]
 }

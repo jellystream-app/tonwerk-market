@@ -1,0 +1,15 @@
+{
+  "id": "listenbrainz-scrobbler",
+  "name": "ListenBrainz Scrobbler",
+  "version": "1.0.0",
+  "api": 1,
+  "description": "Meldet gehörte Titel an ListenBrainz. Nicht gesendete Wiedergaben werden gespeichert und später nachgeholt.",
+  "author": "Tonwerk",
+  "license": "MIT",
+  "main": "main.js",
+  "permissions": ["events", "network:listenbrainz.org"],
+  "settings": [
+    { "key": "token", "label": "ListenBrainz-Token", "type": "password" },
+    { "key": "playingNow", "label": "Aktuellen Titel anzeigen", "type": "toggle", "default": true }
+  ]
+}

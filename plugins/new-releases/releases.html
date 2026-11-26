@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Neuerscheinungen</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 24px 28px 48px; background: var(--panel, #111); color: var(--text, #fff); font-family: var(--font, system-ui, sans-serif); font-size: 14px; }
+  h1 { margin: 0 0 14px; font-size: 28px; letter-spacing: -.03em; }
+  .bar { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 8px; }
+  select, button { font: inherit; color: inherit; background: var(--card, #1d1d1d); border: 1px solid var(--line, #333); border-radius: 6px; padding: 7px 11px; } button { cursor: pointer; } button:hover { background: var(--hover, #262626); } button:disabled { opacity: .5; cursor: default; }
+  .st { color: var(--sub, #aaa); margin: 10px 0 18px; min-height: 1.4em; }
+  progress { width: 100%; max-width: 420px; height: 6px; accent-color: var(--accent, #3df5a7); display: block; margin: 8px 0 0; }
+  .m { max-width: 860px; } .d { display: grid; grid-template-columns: 110px 1fr auto; gap: 14px; padding: 11px 0; border-top: 1px solid var(--line, #333); align-items: baseline; }
+  .d .when { color: var(--sub, #aaa); font-variant-numeric: tabular-nums; } .d .t { font-weight: 700; font-size: 15px; } .d .a { color: var(--sub, #aaa); } .d .ty { color: var(--sub, #aaa); font-size: 13px; }
+  .empty { padding: 40px 0; color: var(--sub, #aaa); }
+</style></head>
+<body>
+<h1>Neuerscheinungen</h1>
+<div class="bar"><select id="range" aria-label="Zeitraum"><option value="60">Letzte 60 Tage</option><option value="180" selected>Letzte 180 Tage</option><option value="365">Letztes Jahr</option></select><button id="reload" type="button">Neu prüfen</button></div>
+<div class="st" id="st" role="status"></div><progress id="p" max="1" value="0" hidden></progress>
+<div class="m" id="out"></div>
+<script src="releases.js"></script></body></html>
